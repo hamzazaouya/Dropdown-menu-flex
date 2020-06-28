@@ -1,0 +1,86 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    background-color: #262626;
+    height: 60px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase
+}
+
+nav a:hover {
+    background-color: #565656
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li{
+    position: relative;
+    width: 100%;
+    text-align: center
+}
+
+nav ul li:hover .menu-one > li {
+    display: block;
+    top: 0
+}
+
+.menu-one  li {
+    display: none;
+    position: relative
+}
+
+.menu-one {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%
+}
+
+.menu-one li:hover .menu-two li{
+    display: block
+}
+
+.menu-two li {
+    display: none;
+}
+
+.menu-two {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:0;
+    left: 100%;
+    width: 200px
+}
+
+.banner {
+    background-image: url(img/golden-gate-bridge-san-francisco-california-1141853.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 60px);
+    font-family: sans-serif
+}
+
+.banner h1 {
+    text-transform: uppercase;
+    color: #FFF;
+    font-size: 60px;
+    -webkit-text-stroke: 3px #000
+}
